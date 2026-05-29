@@ -17,44 +17,43 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "NOPO rebuilt our brand and our marketing site in a single quarter. The work still feels three years ahead of the rest of our category.",
-    name: "Maren Holst",
-    role: "VP Brand",
-    company: "Halia",
-    initials: "MH",
+      "Super kompetente Beratung – es wird nicht um den heißen Brei geredet, sondern es werden Fakten genannt und darauf aufgebaut. Keine falschen Versprechungen oder großes Gerede ohne es einzuhalten. Bomben Jungs, kann ich nur weiterempfehlen!",
+    name: "Junes Djebali",
+    role: "",
+    company: "",
+    initials: "JD",
     accent: true
   },
   {
-    quote:
-      "They cared about the eighth pixel like it was the first. Genuinely the best engagement we&apos;ve run in five years of building Atlas.",
-    name: "David Okafor",
-    role: "Co-founder",
-    company: "Atlas Studio",
-    initials: "DO"
+    quote: "Gute Kommunikation und super Arbeit. Sehr empfehlenswert!",
+    name: "Max Meintz",
+    role: "",
+    company: "Darts Universe",
+    initials: "MM"
   },
   {
     quote:
-      "The motion language they shipped became a recruiting tool. Designers email us asking who built it.",
-    name: "Sara Linde",
-    role: "Head of Design",
-    company: "Northwind",
-    initials: "SL"
+      "Ich hatte ein super Fotoshooting mit Fynn und Inga für einen Model-Job. Kann NOPO nur empfehlen.",
+    name: "Louis",
+    role: "",
+    company: "Moonkid",
+    initials: "L"
   },
   {
     quote:
-      "Strategy was sharp, design was unreasonable in the best way, the engineering hand-off was a non-event. Rare combination.",
-    name: "Jules Pereira",
-    role: "Founder",
-    company: "Modal",
-    initials: "JP"
+      "Eine sehr zuverlässige und freundliche Firma. Leistung und Preis waren top! Kann ich nur empfehlen.",
+    name: "Eik",
+    role: "",
+    company: "Podmoney",
+    initials: "E"
   },
   {
     quote:
-      "We came in with a vague brief about &lsquo;trust.&rsquo; They left us with a brand system, a product launch, and a team that loves what they ship.",
-    name: "Aiyana Reed",
-    role: "CEO",
-    company: "Ovo Health",
-    initials: "AR"
+      "Ein sehr engagiertes, motiviertes junges Team, das mit Leidenschaft und Charisma arbeitet. Es war eine Bereicherung, mit euch zusammenzuarbeiten. Ihr konntet meine Ideen schnell visualisieren und umsetzen. Vielen Dank und viel Erfolg!",
+    name: "Natan",
+    role: "",
+    company: "Heiß & Hungrig",
+    initials: "N"
   }
 ];
 
@@ -71,11 +70,11 @@ export default function Testimonials() {
           <div>
             <div className="flex items-center gap-3 text-xs uppercase tracking-wider2 text-mist mb-6">
               <span className="h-px w-10 bg-ink/30" />
-              <span>05 · Kind words</span>
+              <span>05 · Nette Worte</span>
             </div>
             <AnimatedText
               as="h2"
-              text="What partners say after we ship."
+              text="Was unsere Partner sagen, nachdem die Projekte live sind."
               className="font-display font-bold tracking-tightest leading-[0.95] text-[clamp(36px,6vw,84px)] text-ink text-balance max-w-4xl"
             />
           </div>
@@ -86,7 +85,7 @@ export default function Testimonials() {
               ))}
             </div>
             <span className="font-medium">5.0</span>
-            <span className="text-mist">avg. across 47 engagements</span>
+            <span className="text-mist">Schnitt aus 47 gemeinsamen Projekten</span>
           </div>
         </div>
 
@@ -171,14 +170,16 @@ function TestimonialCard({
           >
             {t.name}
           </div>
-          <div
-            className={cn(
-              "text-xs truncate",
-              t.accent ? "text-paper/60" : "text-ink/55"
-            )}
-          >
-            {t.role} · {t.company}
-          </div>
+          {[t.role, t.company].filter(Boolean).length > 0 && (
+            <div
+              className={cn(
+                "text-xs truncate",
+                t.accent ? "text-paper/60" : "text-ink/55"
+              )}
+            >
+              {[t.role, t.company].filter(Boolean).join(" · ")}
+            </div>
+          )}
         </div>
       </figcaption>
     </motion.figure>

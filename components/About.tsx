@@ -8,23 +8,23 @@ import { ArrowUpRight } from "lucide-react";
 const principles = [
   {
     n: "01",
-    t: "Slow, then fast.",
-    d: "We invest weeks in strategy so execution can fly."
+    t: "Fusion",
+    d: "Die Kombination aus verschiedenen Fachbereichen ist für uns der Schlüssel zu nachhaltigeren und wirkungsvolleren Ergebnissen."
   },
   {
     n: "02",
-    t: "Detail compounds.",
-    d: "8-pixel decisions become 8-year brand assets."
+    t: "Authentizität",
+    d: "Authentizität endet nicht bei Social Media – sie ist im direkten Miteinander genauso wichtig."
   },
   {
     n: "03",
-    t: "Motion is the message.",
-    d: "Static design left the room in 2019."
+    t: "Kreativität",
+    d: "Kreativität ist für uns mehr als nur eine Idee – sie ist ein Prozess, den wir gemeinsam mit unseren Kunden gestalten."
   },
   {
     n: "04",
-    t: "One team, one rhythm.",
-    d: "We embed, we don't hand off and disappear."
+    t: "Entwicklung",
+    d: "Stillstand ist keine Option. Wir suchen ständig nach neuen Möglichkeiten, uns weiterzuentwickeln und unser Wissen zu erweitern."
   }
 ];
 
@@ -40,12 +40,12 @@ export default function About() {
           <div className="lg:col-span-7">
             <div className="flex items-center gap-3 text-xs uppercase tracking-wider2 text-mist mb-6">
               <span className="h-px w-10 bg-ink/30" />
-              <span>06 · About</span>
+              <span>06 · Über uns</span>
             </div>
 
             <AnimatedText
               as="h2"
-              text="A small studio that ships work bigger than itself."
+              text="Mit NOPO Media überall sichtbar"
               className="font-display font-bold tracking-tightest leading-[0.95] text-[clamp(36px,5.4vw,72px)] text-ink text-balance"
             />
 
@@ -57,19 +57,24 @@ export default function About() {
               className="mt-10 space-y-6 text-ink/70 font-light leading-relaxed max-w-2xl text-pretty"
             >
               <p className="text-lg">
-                NOPO was founded in 2017 by four designers who refused to choose between
-                <em className="font-display not-italic font-medium text-ink"> craft </em>
-                and
-                <em className="font-display not-italic font-medium text-ink"> speed</em>.
-                We grew slowly, on purpose. Today, twelve of us — designers, engineers,
-                strategists, and one obsessive typographer — work from Berlin, Lisbon,
-                and Brooklyn.
+                Unsere Reise begann in einer besonderen Zeit – mitten in der
+                Corona-Pandemie. Wir nutzten die gewonnene Zeit und eröffneten ein
+                <em className="font-display not-italic font-medium text-ink"> Tonstudio </em>
+                für Artists, Producer und Podcaster. Nach unzähligen Projekten und einer
+                vielversprechenden Zusammenarbeit haben wir uns entschieden, den nächsten
+                unternehmerischen Schritt zu gehen. Seit 2019 sind wir ein eingespieltes
+                Duo – mit tiefer Leidenschaft für die Medienwelt, einem starken Netzwerk
+                und Erfahrung in Social Media, Marketing und kreativen Prozessen, die wir
+                in jedes NOPO-Projekt einbringen.
               </p>
               <p>
-                We partner with founders and creative directors who care about the last
-                eight pixels. We have a soft spot for finance, culture, and ambitious
-                consumer products. We say no to roughly 70% of inquiries — it's the only
-                way the remaining 30% gets the studio it deserves.
+                Warum Kiel? Warum Schleswig-Holstein? Als gebürtige Kieler wollen wir
+                nicht nur Unternehmen, sondern auch den Standort attraktiver machen. Der
+                Norden ist eine aufstrebende Region voller einzigartiger Geschichten.
+                Unser Ziel: Menschen dabei helfen, ihre Geschichten authentisch zu
+                erzählen und ihre Visionen zu verwirklichen – mit einem hohen
+                Qualitätsanspruch, der unsere eigenen und die Erwartungen unserer Kunden
+                übertrifft.
               </p>
             </motion.div>
 
@@ -79,7 +84,7 @@ export default function About() {
                 href="#contact"
                 className="group inline-flex items-center gap-3 rounded-full bg-ink text-paper pl-6 pr-3 py-3.5 text-[15px] font-medium"
               >
-                <span>Say hello</span>
+                <span>Lass schnacken</span>
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent text-ink transition-transform duration-500 group-hover:rotate-45">
                   <ArrowUpRight className="h-4 w-4" strokeWidth={2.5} />
                 </span>
@@ -98,7 +103,7 @@ export default function About() {
             >
               <div className="rounded-[28px] bg-paper p-8 md:p-10">
                 <div className="text-xs uppercase tracking-wider2 text-mist mb-8">
-                  Principles
+                  Das ist uns wichtig
                 </div>
                 <ul className="divide-y divide-ink/10">
                   {principles.map((p, i) => (
@@ -133,21 +138,21 @@ export default function About() {
                 {Array.from({ length: 2 }).map((_, n) => (
                   <div key={n} className="flex gap-12">
                     {[
-                      "Branding",
+                      "Social Media",
                       "•",
-                      "Motion",
+                      "Websites",
                       "•",
-                      "Web",
+                      "SEO & GEO",
                       "•",
-                      "Product",
+                      "Ads",
                       "•",
-                      "Strategy",
+                      "Video",
                       "•",
-                      "Type",
+                      "Foto",
                       "•",
-                      "Art Direction",
+                      "Strategie",
                       "•",
-                      "AI",
+                      "Content",
                       "•"
                     ].map((w, i) => (
                       <span key={`${n}-${i}`}>{w}</span>

@@ -18,12 +18,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-end">
           <div className="md:col-span-8">
             <div className="text-xs uppercase tracking-wider2 text-paper/50 mb-8">
-              Let's build something
+              Lass uns was bauen
             </div>
             <h2 className="font-display font-black tracking-tightest leading-[0.86] text-[clamp(56px,9vw,160px)]">
-              <span className="block">Have a brief?</span>
+              <span className="block">Idee schon im Kopf?</span>
               <span className="block">
-                Send it <span className="italic font-medium text-accent">over</span>.
+                Lass mal <span className="italic font-medium text-accent">sehen</span>.
               </span>
             </h2>
           </div>
@@ -34,8 +34,8 @@ export default function Footer() {
               strength={32}
               className="group inline-flex h-40 w-40 md:h-52 md:w-52 items-center justify-center rounded-full bg-accent text-ink font-display font-bold text-base md:text-lg shadow-floaty"
             >
-              <span className="flex flex-col items-center gap-1.5">
-                Start a project
+              <span className="flex flex-col items-center gap-1.5 text-center px-4">
+                Neues Projekt starten
                 <ArrowUpRight className="h-5 w-5 transition-transform duration-500 group-hover:rotate-45" strokeWidth={2.5} />
               </span>
             </MagneticButton>
@@ -46,34 +46,32 @@ export default function Footer() {
           <FooterCol
             title="Studio"
             items={[
-              { l: "About", h: "#about" },
+              { l: "Über uns", h: "#about" },
               { l: "Services", h: "#services" },
-              { l: "Work", h: "#portfolio" },
-              { l: "Journal", h: "#" }
+              { l: "Projekte", h: "#portfolio" },
+              { l: "FAQ", h: "#faq" }
             ]}
           />
           <FooterCol
-            title="Reach"
+            title="Kontakt"
             items={[
               { l: "hello@nopo.studio", h: "mailto:hello@nopo.studio" },
-              { l: "+49 030 000 0000", h: "tel:+490300000000" },
-              { l: "Berlin · Lisbon · BK", h: "#" }
+              { l: "Kiel · Norddeutschland", h: "#" }
             ]}
           />
           <FooterCol
             title="Social"
             items={[
               { l: "Instagram", h: "#" },
-              { l: "Twitter / X", h: "#" },
-              { l: "Are.na", h: "#" },
-              { l: "Read.cv", h: "#" }
+              { l: "TikTok", h: "#" },
+              { l: "LinkedIn", h: "#" }
             ]}
           />
           <FooterCol
-            title="Legal"
+            title="Rechtliches"
             items={[
-              { l: "Imprint", h: "#" },
-              { l: "Privacy", h: "#" },
+              { l: "Impressum", h: "#" },
+              { l: "Datenschutz", h: "#" },
               { l: "Cookies", h: "#" }
             ]}
           />
@@ -89,9 +87,9 @@ export default function Footer() {
             />
           </div>
           <div className="flex flex-col md:items-end gap-2 md:gap-1">
-            <div>© 2026 NOPO Studio. All rights reserved.</div>
+            <div>© 2026 NOPO Studio. Alle Rechte vorbehalten.</div>
             <div className="uppercase tracking-wider2">
-              Designed in EU · Built everywhere
+              Made in Kiel · Norddeutschland
             </div>
           </div>
         </div>

@@ -25,52 +25,56 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: "Brand identity",
+    title: "Social Media",
     blurb:
-      "Strategy, naming, visual systems and motion identities that compound over years.",
-    tags: ["Strategy", "Logo", "Guidelines"],
-    icon: Compass,
+      "Wir übernehmen deine Kanäle komplett – von der Strategie über die Content-Produktion bis zum Community Management. Organisches Wachstum, das bleibt.",
+    tags: ["Strategie", "Content", "Performance"],
+    icon: Sparkles,
     span: "md:col-span-7 md:row-span-2",
     tone: "light"
   },
   {
-    title: "Motion",
-    blurb: "Brand films, UI motion libraries, kinetic typography.",
-    tags: ["Reels", "UI motion"],
-    icon: Wand2,
+    title: "Websites",
+    blurb:
+      "Dein gesamter Webauftritt entsteht bei uns: vom UX/UI-Design über die Entwicklung bis zum Live-Gang.",
+    tags: ["Development", "UX/UI-Design"],
+    icon: Code2,
     span: "md:col-span-5",
     tone: "accent"
   },
   {
-    title: "Web & product",
-    blurb: "Editorial sites, e-commerce, web apps. Engineered with the same care as the type.",
-    tags: ["Next.js", "Shopify", "Webflow"],
-    icon: Code2,
+    title: "SEO & GEO",
+    blurb:
+      "Deine Auffindbarkeit in der Region steuern wir ganzheitlich – von der SEO-Analyse über die Content-Optimierung bis zur lokalen Platzierung für planbaren Kundenzulauf.",
+    tags: ["Keywords", "Ranking", "Reichweite"],
+    icon: Compass,
     span: "md:col-span-3",
     tone: "dark"
   },
   {
-    title: "Art direction",
-    blurb: "Campaigns and editorial systems.",
-    tags: ["Photography", "Print"],
-    icon: Palette,
+    title: "Ads",
+    blurb:
+      "Von der Kampagnenplanung über das kreative Ad-Design bis zur täglichen Optimierung steuern wir deine gesamte Onlinewerbung.",
+    tags: ["Google", "Meta"],
+    icon: Wand2,
     span: "md:col-span-2",
     tone: "light"
   },
   {
-    title: "Design systems",
+    title: "Video",
     blurb:
-      "Tokens, components, documentation. We build the rails your future team will move on.",
-    tags: ["Figma", "Tokens", "Storybook"],
+      "Eventvideos, Imagefilme und Social-Media-Content entstehen bei uns – direkt einsatzbereit für all deine Kanäle.",
+    tags: ["Konzept", "Dreh", "Schnitt"],
     icon: Layers,
     span: "md:col-span-7",
     tone: "light"
   },
   {
-    title: "AI experiences",
-    blurb: "Thoughtful agentic interfaces & creative tools.",
-    tags: ["LLM", "Agents"],
-    icon: Sparkles,
+    title: "Foto",
+    blurb:
+      "Wir fotografieren deine Events, Produkte und dein Team für Content auf Premium-Niveau.",
+    tags: ["Shooting", "Retusche"],
+    icon: Palette,
     span: "md:col-span-5",
     tone: "light"
   }
@@ -85,17 +89,18 @@ export default function Services() {
           <div>
             <div className="flex items-center gap-3 text-xs uppercase tracking-wider2 text-mist mb-6">
               <span className="h-px w-10 bg-ink/30" />
-              <span>02 · Capabilities</span>
+              <span>02 · Was wir machen</span>
             </div>
             <AnimatedText
               as="h2"
-              text="A studio with a span that fits in one breath."
+              text="Das ganze Spektrum. Aus einer Hand."
               className="font-display font-bold tracking-tightest leading-[0.95] text-[clamp(36px,6vw,84px)] text-ink max-w-4xl"
             />
           </div>
           <p className="md:max-w-sm text-ink/60 font-light text-pretty leading-relaxed">
-            Six disciplines, one cadence. We embed with your team and ship work that is
-            still talked about in five years.
+            Von performanten Websites und Social-Media-Konzepten über professionelle
+            Foto- und Videoproduktionen bis hin zu strategischem SEO und Ads: Wir agieren
+            als nahtlose Erweiterung deines Teams.
           </p>
         </div>
 

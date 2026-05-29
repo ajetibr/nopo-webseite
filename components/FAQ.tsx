@@ -9,24 +9,24 @@ type Item = { q: string; a: string };
 
 const items: Item[] = [
   {
-    q: "What does a typical engagement look like?",
-    a: "A typical engagement runs 10–16 weeks across four chapters — Discovery, Strategy, Design, Development. We embed with your team in a single shared channel and meet twice weekly. Most clients keep us on a long-tail retainer afterwards because the work keeps evolving."
+    q: "Wie viel Zeit muss ich für das Projekt einplanen?",
+    a: "So viel, wie du möchtest. Unsere Zusammenarbeit läuft komplett stressfrei. Nach dem ersten Kennenlernen übernehmen wir das Ruder. Du musst also keine stundenlangen Meetings einplanen – wir halten dich einfach unkompliziert auf dem Laufenden, während du dich entspannt um dein Business kümmerst."
   },
   {
-    q: "What size of company do you usually work with?",
-    a: "About 60% of our work is with Series A–C founders. The rest is split between later-stage product teams that need a brand reset and cultural institutions. We don&apos;t scale up the team for bigger logos — same six humans on every project."
+    q: "Was kostet die Zusammenarbeit mit euch?",
+    a: "Bei uns gibt es keine versteckten Kosten oder bösen Überraschungen am Ende. Nach unserem ersten Gespräch werfen wir einen Blick auf deine Kanäle, und du bekommst ein transparentes, unverbindliches Angebot mit einer klaren Aufwandsschätzung. So weißt du von Tag eins an genau, woran du bist."
   },
   {
-    q: "Do you take equity?",
-    a: "Occasionally, for founders we believe in. It&apos;s not the default. The default is a fixed scope of work invoiced in three milestones."
+    q: "Könnt ihr auch bestehende Websites oder SEO-Strategien optimieren?",
+    a: "Absolut. Wir müssen das Rad nicht immer neu erfinden. Wenn du schon eine Website hast, die aber nicht richtig performt, oder dein Google-Ranking einen Schubs braucht, klinken wir uns genau da ein. Wir analysieren den Ist-Zustand und drehen an den Stellschrauben, die dich wirklich weiterbringen."
   },
   {
-    q: "Can you embed with our existing design team?",
-    a: "Yes — and we love it. The most enduring work usually comes from co-creating with a strong in-house team that will carry the system forward long after we&apos;ve gone."
+    q: "Betreut ihr die Projekte auch nach dem Live-Gang weiter?",
+    a: "Na klar, wir lassen dich danach nicht im Regen stehen. Wir übergeben dir alle Ergebnisse so, dass dein Team im Alltag super einfach damit arbeiten kann. Und wenn du danach Unterstützung beim Content, bei Social Ads oder der Wartung brauchst, sind wir weiterhin als feste Partner an deiner Seite."
   },
   {
-    q: "How do I start a project?",
-    a: "Send an email to hello@nopo.studio with a paragraph about your company and what you&apos;re trying to make true. We reply within two business days, even when the answer is no."
+    q: "Wer arbeitet konkret an meinem Projekt?",
+    a: "Bei uns gibt es kein anonymes Agentur-Chaos. Hinter NOPO stehen wir – Ajet und Noel. Du hast also immer den direkten Draht zu den Leuten, die dein Projekt auch tatsächlich umsetzen. Wir teilen uns die Aufgaben je nach Skills genau so auf, dass das beste Ergebnis für dich herauskommt."
   }
 ];
 
@@ -46,11 +46,10 @@ export default function FAQ() {
               <span>08 · FAQ</span>
             </div>
             <h2 className="font-display font-bold tracking-tightest leading-[0.95] text-[clamp(36px,4.8vw,60px)] text-ink text-balance">
-              Questions we hear, <span className="italic font-medium">often</span>.
+              Fragen, die wir <span className="italic font-medium">oft</span> hören.
             </h2>
             <p className="mt-6 text-ink/60 font-light leading-relaxed max-w-sm">
-              Something missing? Email us and we&apos;ll add it. We update this every
-              quarter.
+              Frage nicht dabei? Kurze Mail an uns und wir ergänzen sie.
             </p>
           </div>
 

@@ -54,11 +54,11 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent/70" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            Open for Q1 2026
+            Kreativ. Strategisch. Digital.
           </span>
           <span className="inline-flex h-9 items-center gap-2 rounded-full glass px-4 text-[12px] uppercase tracking-wider2 text-ink/70">
             <Sparkles className="h-3.5 w-3.5 text-accent" />
-            Award-winning studio
+            Websites, Content & Ads
           </span>
         </motion.div>
 
@@ -66,10 +66,10 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           <div className="lg:col-span-8">
             <h1 className="font-display font-black tracking-tightest leading-[0.9] text-ink text-[clamp(40px,7vw,110px)] text-balance">
-              <Line text="We craft" delay={0.1} />
-              <Line text={["brands that ", { highlight: "move" }]} delay={0.25} />
+              <Line text="NOPO Media —" delay={0.1} />
+              <Line text={["deine ", { highlight: "Creative Agency" }, " aus Kiel"]} delay={0.25} />
               <Line
-                text={["& products that ", { highlight: "matter" }, "."]}
+                text={["für Social Media & ", { highlight: "Online Marketing" }]}
                 delay={0.4}
               />
             </h1>
@@ -80,9 +80,10 @@ export default function Hero() {
               transition={{ duration: 0.9, delay: 1.1 }}
               className="mt-10 text-[17px] md:text-lg text-ink/65 font-light leading-relaxed text-pretty max-w-lg"
             >
-              NOPO is an independent creative studio shaping identities, websites, and
-              digital products with an obsession for motion, detail and the very last 8
-              pixels.
+              Aus dem hohen Norden entwickeln wir individuelle Strategien, die deine
+              Reichweite erhöhen, deine Sichtbarkeit verbessern und nachhaltiges Wachstum
+              fördern. Wir verbinden kreative Ideen mit technischer Expertise, um deine
+              Marke im digitalen Raum langfristig stark zu positionieren.
             </motion.p>
 
             <motion.div
@@ -96,7 +97,7 @@ export default function Hero() {
                 href="#portfolio"
                 className="group relative inline-flex items-center gap-3 rounded-full bg-accent text-ink pl-7 pr-3 py-3.5 text-[15px] font-medium overflow-hidden shadow-floaty"
               >
-                <span className="relative z-10">See selected work</span>
+                <span className="relative z-10">Projekte entdecken</span>
                 <span className="relative z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-ink text-paper transition-transform duration-500 group-hover:rotate-45">
                   <ArrowDown className="h-4 w-4 -rotate-45" strokeWidth={2.5} />
                 </span>
@@ -110,7 +111,7 @@ export default function Hero() {
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-ink text-paper">
                   <Play className="h-3.5 w-3.5 fill-paper" strokeWidth={0} />
                 </span>
-                <span>Watch the reel</span>
+                <span>Lerne uns kennen</span>
               </MagneticButton>
             </motion.div>
           </div>
@@ -134,10 +135,10 @@ export default function Hero() {
           className="mt-20 md:mt-28 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-ink/10 pt-8"
         >
           {[
-            { v: "120+", l: "Shipped projects" },
-            { v: "27", l: "International awards" },
-            { v: "9 yrs", l: "Of compounding craft" },
-            { v: "EU / US", l: "Distributed team" }
+            { v: "40+", l: "Zufriedene Kunden" },
+            { v: "3+", l: "Jahre Erfahrung" },
+            { v: "1", l: "Ansprechpartner für alles" },
+            { v: "100%", l: "Aus dem Norden" }
           ].map((s) => (
             <div key={s.l}>
               <div className="font-display font-bold text-3xl md:text-4xl text-ink">

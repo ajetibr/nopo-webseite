@@ -3,16 +3,15 @@
 import { motion } from "framer-motion";
 
 const clients = [
-  "HALIA",
-  "ATLAS",
-  "NORTHWIND",
-  "MODAL",
-  "OVO",
-  "FORMA",
-  "STRATA",
-  "KEPLER",
-  "MARGIN",
-  "FJORD"
+  "PARAMOUNT+",
+  "HOLSTEIN KIEL",
+  "PDC",
+  "HEISS & HUNGRIG",
+  "CINEMARE",
+  "MOONKID",
+  "DARTS UNIVERSE",
+  "PODMONEY",
+  "ATELIER EVENTS"
 ];
 
 type Props = {
@@ -24,7 +23,7 @@ type Props = {
 export default function ClientLogos({
   variant = "dark",
   showHeader = true,
-  eyebrow = "In good company"
+  eyebrow = "In guter Gesellschaft"
 }: Props) {
   const isDark = variant === "dark";
 
@@ -61,8 +60,8 @@ export default function ClientLogos({
                 (isDark ? "text-paper/55" : "text-ink/55")
               }
             >
-              A short list of the people who keep coming back. We&apos;re grateful — and
-              still very picky.
+              Mit vielen unserer Kunden arbeiten wir schon seit Jahren Hand in Hand.
+              Dieses Vertrauen bedeutet uns extrem viel.
             </p>
           </motion.div>
         </div>

@@ -145,7 +145,7 @@ export default function Navigation() {
           href="#contact"
           className="group relative inline-flex items-center gap-1.5 rounded-full bg-ink text-paper pl-4 pr-3 py-2 text-[13px] font-medium overflow-hidden"
         >
-          <span className="relative z-10">Start a project</span>
+          <span className="relative z-10">Projekt starten</span>
           <span className="relative z-10 inline-flex h-6 w-6 items-center justify-center rounded-full bg-accent text-ink transition-transform duration-500 group-hover:rotate-45">
             <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.5} />
           </span>

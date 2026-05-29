@@ -22,51 +22,50 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Halia — fluid finance",
-    client: "Halia",
-    category: "Brand · Product",
+    title: "Paramount+ – Gamescom",
+    client: "Paramount+",
+    category: "Social Content · Aftermovie",
     year: "2025",
     size: "wide",
     gradient: "from-[#1a1a1a] via-[#2a3e48] to-[#5BC5E6]"
-    // video: "/work/halia.mp4", poster: "/work/halia.jpg"
   },
   {
-    title: "Velvet Atlas",
-    client: "Atlas Studio",
-    category: "Editorial Web",
-    year: "2025",
+    title: "Heiß & Hungrig",
+    client: "Heiß & Hungrig",
+    category: "Kanalkonzeption",
+    year: "2026",
     size: "tall",
     gradient: "from-[#5BC5E6] via-[#cfeff9] to-[#ffffff]"
   },
   {
-    title: "Northwind / 02",
-    client: "Northwind",
-    category: "Identity · Motion",
-    year: "2024",
+    title: "PDC",
+    client: "PDC",
+    category: "Social Content · Post Production",
+    year: "2025",
     size: "tall",
     gradient: "from-[#f4f4f5] via-[#a0a0a0] to-[#1a1a1a]"
   },
   {
-    title: "Modal Café",
-    client: "Modal",
-    category: "Brand · Spatial",
+    title: "Cinemare Meeresfilmfestival",
+    client: "Cinemare",
+    category: "Webdesign",
     year: "2024",
     size: "wide",
     gradient: "from-[#cfeff9] via-[#5BC5E6] to-[#1a1a1a]"
   },
   {
-    title: "Ovo Health",
-    client: "Ovo",
-    category: "Product Design",
-    year: "2024",
+    title: "Holstein Kiel Jubiläum mit Budenzauber",
+    client: "Holstein Kiel",
+    category: "Aftermovie",
+    year: "2025",
     size: "square",
     gradient: "from-[#1a1a1a] via-[#5BC5E6] to-[#cfeff9]"
   },
   {
-    title: "Forma Type",
-    client: "Forma Foundry",
-    category: "Type · Site",
-    year: "2023",
+    title: "Atelier Events",
+    client: "Atelier Events",
+    category: "Webdesign · SEO",
+    year: "2026",
     size: "square",
     gradient: "from-[#ffffff] via-[#ededed] to-[#1a1a1a]"
   }
@@ -84,17 +83,16 @@ export default function Portfolio() {
           <div>
             <div className="flex items-center gap-3 text-xs uppercase tracking-wider2 text-paper/40 mb-6">
               <span className="h-px w-10 bg-paper/30" />
-              <span>04 · Selected work</span>
+              <span>04 · Ausgewählte Projekte</span>
             </div>
             <AnimatedText
               as="h2"
-              text="Things we are proud of."
+              text="Ein paar echte Highlights."
               className="font-display font-bold tracking-tightest leading-[0.95] text-[clamp(36px,6vw,84px)] text-paper"
             />
           </div>
           <p className="max-w-sm text-paper/55 font-light leading-relaxed">
-            Six recent pieces. Each one shipped with the team that actually keeps it
-            alive afterwards.
+            Ein kleiner Einblick in unsere jüngsten Arbeiten.
           </p>
         </div>
 
@@ -117,7 +115,7 @@ export default function Portfolio() {
             href="#contact"
             className="group inline-flex items-center gap-4 rounded-full border border-paper/15 hover:border-paper/40 px-8 py-5 text-paper/80 hover:text-paper transition-colors"
           >
-            <span className="font-display text-xl md:text-2xl">View full archive</span>
+            <span className="font-display text-xl md:text-2xl">Ab ins Archiv</span>
             <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent text-ink transition-transform duration-500 group-hover:rotate-45">
               <ArrowUpRight className="h-5 w-5" strokeWidth={2.5} />
             </span>
@@ -127,7 +125,7 @@ export default function Portfolio() {
 
       {/* Embedded dark logobar */}
       <div className="relative mt-24 md:mt-32 border-t border-paper/10 pt-16">
-        <ClientLogos variant="dark" eyebrow="In good company · Selected partners" />
+        <ClientLogos variant="dark" eyebrow="In guter Gesellschaft · Partner & Kunden" />
       </div>
     </section>
   );
@@ -260,7 +258,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="hidden md:inline-flex items-center gap-2 rounded-full bg-accent text-ink px-4 py-2 text-xs font-medium uppercase tracking-wider2 shrink-0"
         >
-          View case
+          Projekt ansehen
           <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.5} />
         </motion.span>
       </div>

@@ -18,13 +18,14 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "NOPO — Creative Studio for Brands That Move",
+  title: "NOPO Media – Kreative Full-Service Medienagentur aus Kiel",
   description:
-    "An award-winning digital studio crafting fluid brand systems, products, and motion identities.",
+    "Digitale Medienagentur aus Kiel für Social Media, Webseiten, SEO & Ads. Maßgeschneiderte Strategien für mehr Sichtbarkeit und Wachstum.",
   metadataBase: new URL("https://nopo.studio"),
   openGraph: {
-    title: "NOPO Studio",
-    description: "Creative digital studio. Brands that move.",
+    title: "NOPO Media – Kreative Full-Service Medienagentur aus Kiel",
+    description:
+      "Digitale Medienagentur aus Kiel für Social Media, Webseiten, SEO & Ads. Maßgeschneiderte Strategien für mehr Sichtbarkeit und Wachstum.",
     type: "website"
   }
 };
@@ -35,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable}`}>
+    <html lang="de" className={`${display.variable} ${sans.variable}`}>
       <body className="bg-paper text-ink antialiased">
         <SmoothScroll>{children}</SmoothScroll>
       </body>

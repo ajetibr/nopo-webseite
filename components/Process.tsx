@@ -19,76 +19,74 @@ type Step = {
 const steps: Step[] = [
   {
     n: "01",
-    title: "Discovery",
-    duration: "1–2 weeks",
+    title: "Kennenlernen",
+    duration: "",
     icon: Search,
     blurb:
-      "We listen first. Stakeholder interviews, audit your category, map the constraints that the rest of the project will dance around.",
+      "Wir schnacken ganz unkompliziert über deine aktuelle Lage, deine Ziele und wo der Schuh gerade drückt. So finden wir ohne langes Drumherum genau den Hebel, der dich wirklich weiterbringt.",
     activities: [
-      "Stakeholder interviews",
-      "Competitive & cultural audit",
-      "Quant + qual research synthesis"
+      "Erstes Kennenlernen & Vibe-Check",
+      "Bestandsaufnahme deiner aktuellen Lage",
+      "Grobe Potenzial- und Zielanalyse"
     ],
     deliverables: [
-      "Insight document",
-      "Opportunity map",
-      "North-star brief"
+      "Klarer Fahrplan",
+      "Erstes unverbindliches Angebot",
+      "Transparente Aufwandseinschätzung"
     ]
   },
   {
     n: "02",
-    title: "Strategy",
-    duration: "2 weeks",
+    title: "Strategie & Konzept",
+    duration: "",
     icon: Compass,
     blurb:
-      "Positioning, narrative, design principles. A short, fierce document that everyone — design, eng, marketing — refers back to for the next two years.",
+      "Jetzt wird aus deinen Zielen ein klarer Plan. Wir legen fest, welche Kanäle, Inhalte und Maßnahmen dich wirklich nach vorne bringen – und in welcher Reihenfolge. Du bekommst eine Strategie, die nicht in der Schublade landet, sondern Woche für Woche umgesetzt wird.",
     activities: [
-      "Positioning workshop",
-      "Narrative architecture",
-      "Audience & tone mapping"
+      "Strategie & Kanalauswahl passend zu deinen Zielen",
+      "Kreativ- und Content-Konzept",
+      "Konkreter Maßnahmen- und Zeitplan"
     ],
     deliverables: [
-      "Positioning manifesto",
-      "Messaging house",
-      "Design principles deck"
+      "Klare Strategie auf den Punkt",
+      "Roter Faden für alle Inhalte",
+      "Verbindlicher Fahrplan für die Umsetzung"
     ]
   },
   {
     n: "03",
-    title: "Design",
-    duration: "4–8 weeks",
+    title: "Produktion & Umsetzung",
+    duration: "",
     icon: PenTool,
     blurb:
-      "Identity, type, motion language, screens. Built in tight loops with you in the room — not over a Friday afternoon reveal email.",
+      "Jetzt geht's ans Eingemachte: Wir produzieren, gestalten und bauen. Ob Website, Foto- und Videocontent oder Kampagnen – wir setzen das Konzept Schritt für Schritt um und halten dich dabei locker auf dem Laufenden, ohne dich mit Details zu überfrachten.",
     activities: [
-      "Identity & typography",
-      "Motion language",
-      "Component & screen design",
-      "Weekly studio reviews"
+      "Produktion von Content, Design & Website",
+      "Umsetzung der geplanten Maßnahmen",
+      "Laufende Abstimmung in kurzen Feedback-Schleifen"
     ],
     deliverables: [
-      "Brand identity system",
-      "Motion guidelines",
-      "Production-ready Figma library"
+      "Fertige Inhalte, einsatzbereit für deine Kanäle",
+      "Regelmäßige Updates ohne Meeting-Marathon",
+      "Ergebnisse, die sitzen"
     ]
   },
   {
     n: "04",
-    title: "Development",
-    duration: "4–10 weeks",
+    title: "Launch & Optimierung",
+    duration: "",
     icon: Code2,
     blurb:
-      "Engineered with the same care as the type. Hand-off is a non-event because we never let go in the first place.",
+      "Wenn alles steht, gehen wir live – und bleiben dran. Wir beobachten, was funktioniert, drehen an den richtigen Stellschrauben und holen Schritt für Schritt mehr aus deinen Kanälen heraus. Nach dem Launch lassen wir dich nicht allein, sondern begleiten dich als feste Partner weiter.",
     activities: [
-      "Front-end engineering",
-      "CMS & integrations",
-      "QA across devices",
-      "Performance & accessibility audit"
+      "Go-live und sauberer Übergang",
+      "Auswertung der ersten Ergebnisse",
+      "Laufende Optimierung von Reichweite & Performance"
     ],
     deliverables: [
-      "Production codebase",
-      "CI/CD pipeline",
-      "Maintenance playbook"
+      "Ein erfolgreicher Launch",
+      "Transparente Reportings",
+      "Ein Partner, der auch danach an deiner Seite bleibt"
     ]
   }
 ];
@@ -108,17 +106,17 @@ export default function Process() {
           <div>
             <div className="flex items-center gap-3 text-xs uppercase tracking-wider2 text-mist mb-6">
               <span className="h-px w-10 bg-ink/30" />
-              <span>03 · How we work</span>
+              <span>03 · Unser Workflow</span>
             </div>
             <AnimatedText
               as="h2"
-              text="Four chapters. One rhythm."
+              text="Klarer Plan. Null Stress."
               className="font-display font-bold tracking-tightest leading-[0.95] text-[clamp(36px,6vw,84px)] text-ink"
             />
           </div>
           <p className="max-w-sm text-ink/60 font-light leading-relaxed">
-            Every engagement runs through the same four chapters — adapted in length,
-            never skipped.
+            Jedes gemeinsame Projekt durchläuft die gleichen vier Meilensteine –
+            angepasst an dein Tempo, aber kompromisslos in der Umsetzung.
           </p>
         </div>
 
@@ -164,14 +162,16 @@ export default function Process() {
                       </span>
                     </span>
 
-                    <span
-                      className={cn(
-                        "hidden md:inline-block text-xs uppercase tracking-wider2 shrink-0 transition-colors duration-500",
-                        isActive ? "text-paper/60" : "text-mist"
-                      )}
-                    >
-                      {s.duration}
-                    </span>
+                    {s.duration && (
+                      <span
+                        className={cn(
+                          "hidden md:inline-block text-xs uppercase tracking-wider2 shrink-0 transition-colors duration-500",
+                          isActive ? "text-paper/60" : "text-mist"
+                        )}
+                      >
+                        {s.duration}
+                      </span>
+                    )}
 
                     <motion.span
                       animate={{ rotate: isActive ? 45 : 0 }}
@@ -212,7 +212,7 @@ export default function Process() {
 
                           <div className="md:col-span-3">
                             <div className="text-[10px] uppercase tracking-wider2 text-paper/40 mb-3">
-                              Activities
+                              Das machen wir
                             </div>
                             <ul className="space-y-2.5">
                               {s.activities.map((b) => (
@@ -229,7 +229,7 @@ export default function Process() {
 
                           <div className="md:col-span-3">
                             <div className="text-[10px] uppercase tracking-wider2 text-paper/40 mb-3">
-                              Deliverables
+                              Das bekommst du
                             </div>
                             <ul className="space-y-2.5">
                               {s.deliverables.map((b) => (

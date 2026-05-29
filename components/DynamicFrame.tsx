@@ -26,7 +26,7 @@ type Props = {
  */
 export default function DynamicFrame({
   className,
-  label = "Showreel · 2026",
+  label = "Vorschau Reel",
   caption = "01:24"
 }: Props) {
   const ref = useRef<HTMLDivElement>(null);

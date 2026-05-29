@@ -22,10 +22,10 @@ type Director = {
 const directors: Director[] = [
   {
     name: "Ajet Ibrahimi",
-    role: "Managing Director · Creative",
+    role: "Geschäftsführer · Web · KI",
     initials: "AI",
     quote:
-      "Every project is a chance to ship one detail no one has seen before. We are unreasonable about that.",
+      "Meine Kreativität ausleben und gleichzeitig unseren Partnern echten Mehrwert bieten – das ist für mich der Kern meiner Arbeit bei NOPO Media.",
     email: "ajet@nopo.studio",
     linkedin: "https://linkedin.com/in/ajetibrahimi",
     image: `${BASE_PATH}/ajet-ibrahimi.webp`,
@@ -33,10 +33,10 @@ const directors: Director[] = [
   },
   {
     name: "Noel Vuylsteke",
-    role: "Managing Director · Strategy",
+    role: "Geschäftsführer · Creative · Sales",
     initials: "NV",
     quote:
-      "Strategy without craft is a slide deck. Craft without strategy is a moodboard. We refuse to choose.",
+      "Ich bin begeistert von Menschen, die ihre Träume verwirklichen. Genau mit DIESEN Menschen möchte ich zusammenarbeiten.",
     email: "noel@nopo.studio",
     linkedin: "https://linkedin.com/in/noelvuylsteke",
     image: `${BASE_PATH}/noel-vuylsteke.webp`,
@@ -57,17 +57,17 @@ export default function Leadership() {
           <div>
             <div className="flex items-center gap-3 text-xs uppercase tracking-wider2 text-mist mb-6">
               <span className="h-px w-10 bg-ink/30" />
-              <span>07 · Leadership</span>
+              <span>07 · Wer wir sind</span>
             </div>
             <AnimatedText
               as="h2"
-              text="The two humans on the hook."
+              text="Deine Ansprechpartner"
               className="font-display font-bold tracking-tightest leading-[0.95] text-[clamp(36px,6vw,84px)] text-ink text-balance max-w-4xl"
             />
           </div>
           <p className="max-w-sm text-ink/60 font-light leading-relaxed">
-            NOPO is co-led by Ajet and Noel. Between them, twenty years of shipping
-            work that outlives the brief.
+            Hinter NOPO stehen wir – Ajet und Noel. Seit Jahren arbeiten wir eng
+            zusammen und ergänzen uns bei unseren Skills perfekt.
           </p>
         </div>
 
