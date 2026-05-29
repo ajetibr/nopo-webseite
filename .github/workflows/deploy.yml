@@ -46,6 +46,8 @@ jobs:
 
       - name: Build with Next.js
         run: npx next build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /nopo-webseite
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

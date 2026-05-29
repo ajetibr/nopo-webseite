@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import MagneticButton from "./MagneticButton";
+import BASE_PATH from "@/lib/basePath";
 import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
@@ -82,7 +83,7 @@ export default function Footer() {
           <div className="leading-none">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo-white.png"
+              src={`${BASE_PATH}/logo-white.png`}
               alt="NOPO Logo"
               className="h-20 md:h-32 w-auto object-contain"
             />

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import BASE_PATH from "@/lib/basePath";
 import AnimatedText from "./AnimatedText";
 import { cn } from "@/lib/utils";
 
@@ -27,7 +28,7 @@ const directors: Director[] = [
       "Every project is a chance to ship one detail no one has seen before. We are unreasonable about that.",
     email: "ajet@nopo.studio",
     linkedin: "https://linkedin.com/in/ajetibrahimi",
-    image: "/Ajet Ibrahimi.webp",
+    image: `${BASE_PATH}/ajet-ibrahimi.webp`,
     gradient: "from-[#1a1a1a] via-[#2a3e48] to-[#5BC5E6]"
   },
   {
@@ -38,7 +39,7 @@ const directors: Director[] = [
       "Strategy without craft is a slide deck. Craft without strategy is a moodboard. We refuse to choose.",
     email: "noel@nopo.studio",
     linkedin: "https://linkedin.com/in/noelvuylsteke",
-    image: "/Noel Vuylsteke.webp",
+    image: `${BASE_PATH}/noel-vuylsteke.webp`,
     gradient: "from-[#5BC5E6] via-[#cfeff9] to-[#1a1a1a]"
   }
 ];

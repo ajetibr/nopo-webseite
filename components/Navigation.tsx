@@ -9,6 +9,7 @@ import {
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import BASE_PATH from "@/lib/basePath";
 import MagneticButton from "./MagneticButton";
 import { cn } from "@/lib/utils";
 
@@ -67,7 +68,7 @@ export default function Navigation() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo-black.png"
+              src={`${BASE_PATH}/logo-black.png`}
               alt="NOPO Logo"
               className="h-7 w-auto object-contain"
             />

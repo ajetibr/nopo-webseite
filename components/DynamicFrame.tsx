@@ -11,6 +11,7 @@ import {
 import { useEffect, useRef } from "react";
 import { Play } from "lucide-react";
 import { cn } from "@/lib/utils";
+import BASE_PATH from "@/lib/basePath";
 
 type Props = {
   className?: string;
@@ -126,7 +127,7 @@ export default function DynamicFrame({
       <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/logo-white.png"
+          src={`${BASE_PATH}/logo-white.png`}
           alt="NOPO Logo"
           className="h-7 w-auto object-contain"
         />
