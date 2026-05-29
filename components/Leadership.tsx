@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
+import Image from "next/image";
 import { Linkedin, Mail, ArrowUpRight } from "lucide-react";
 import AnimatedText from "./AnimatedText";
 import { cn } from "@/lib/utils";
@@ -20,25 +21,25 @@ type Director = {
 
 const directors: Director[] = [
   {
-    name: "Lena Brückner",
+    name: "Ajet Ibrahimi",
     role: "Managing Director · Creative",
-    initials: "LB",
+    initials: "AI",
     quote:
       "Every project is a chance to ship one detail no one has seen before. We are unreasonable about that.",
-    email: "lena@nopo.studio",
-    linkedin: "https://linkedin.com/in/lenabrueckner",
-    // image: "/team/lena.jpg",
+    email: "ajet@nopo.studio",
+    linkedin: "https://linkedin.com/in/ajetibrahimi",
+    image: "/Ajet Ibrahimi.webp",
     gradient: "from-[#1a1a1a] via-[#2a3e48] to-[#5BC5E6]"
   },
   {
-    name: "Mateusz Adler",
+    name: "Noel Vuylsteke",
     role: "Managing Director · Strategy",
-    initials: "MA",
+    initials: "NV",
     quote:
       "Strategy without craft is a slide deck. Craft without strategy is a moodboard. We refuse to choose.",
-    email: "mateusz@nopo.studio",
-    linkedin: "https://linkedin.com/in/mateuszadler",
-    // image: "/team/mateusz.jpg",
+    email: "noel@nopo.studio",
+    linkedin: "https://linkedin.com/in/noelvuylsteke",
+    image: "/Noel Vuylsteke.webp",
     gradient: "from-[#5BC5E6] via-[#cfeff9] to-[#1a1a1a]"
   }
 ];
@@ -117,11 +118,12 @@ function DirectorCard({
         className="absolute inset-0"
       >
         {d.image ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             src={d.image}
             alt={d.name}
-            className="absolute inset-0 h-full w-full object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover"
           />
         ) : (
           <div className={cn("absolute inset-0 bg-gradient-to-br", d.gradient)} />

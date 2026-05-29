@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import MagneticButton from "./MagneticButton";
 import { cn } from "@/lib/utils";
@@ -57,22 +58,23 @@ export default function Navigation() {
         {/* Logo */}
         <Link
           href="#home"
-          className="flex items-center gap-2 pl-3 group"
+          className="flex items-center pl-2 group"
           onClick={() => setActive("Home")}
         >
           <motion.span
-            whileHover={{ rotate: 90 }}
-            transition={{ type: "spring", stiffness: 200, damping: 14 }}
-            className="relative inline-flex h-8 w-8 items-center justify-center rounded-full bg-ink text-paper"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="relative inline-flex items-center justify-center"
           >
-            <span className="absolute inset-1 rounded-full bg-accent opacity-90" />
-            <span className="relative font-display font-black text-[11px] tracking-tightest">
-              N
-            </span>
+            <Image
+              src="/logo-black.png"
+              alt="NOPO Logo"
+              width={96}
+              height={32}
+              className="h-7 w-auto object-contain"
+              priority
+            />
           </motion.span>
-          <span className="font-display font-bold tracking-tight text-ink hidden sm:block">
-            nopo<span className="text-accent">.</span>
-          </span>
         </Link>
 
         {/* Menu — hover-glide pill via layoutId */}

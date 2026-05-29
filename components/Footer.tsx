@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import MagneticButton from "./MagneticButton";
 import { ArrowUpRight } from "lucide-react";
 
@@ -79,8 +80,14 @@ export default function Footer() {
         </div>
 
         <div className="mt-20 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-t border-paper/10 pt-8 text-xs text-paper/50">
-          <div className="font-display font-black text-paper text-7xl md:text-9xl tracking-tightest leading-none">
-            nopo<span className="text-accent">.</span>
+          <div className="leading-none">
+            <Image
+              src="/logo-white.png"
+              alt="NOPO Logo"
+              width={480}
+              height={160}
+              className="h-20 md:h-32 w-auto object-contain"
+            />
           </div>
           <div className="flex flex-col md:items-end gap-2 md:gap-1">
             <div>© 2026 NOPO Studio. All rights reserved.</div>
