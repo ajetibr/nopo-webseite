@@ -8,7 +8,6 @@ import {
 } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import MagneticButton from "./MagneticButton";
 import { cn } from "@/lib/utils";
@@ -66,13 +65,11 @@ export default function Navigation() {
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className="relative inline-flex items-center justify-center"
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/logo-black.png"
               alt="NOPO Logo"
-              width={96}
-              height={32}
               className="h-7 w-auto object-contain"
-              priority
             />
           </motion.span>
         </Link>

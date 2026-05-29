@@ -9,7 +9,6 @@ import {
   useVelocity
 } from "framer-motion";
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import { Play } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -125,11 +124,10 @@ export default function DynamicFrame({
         </span>
       </div>
       <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/logo-white.png"
           alt="NOPO Logo"
-          width={120}
-          height={40}
           className="h-7 w-auto object-contain"
         />
         <span className="font-display text-xs text-paper/60 tracking-wider2">

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-import Image from "next/image";
 import { Linkedin, Mail, ArrowUpRight } from "lucide-react";
 import AnimatedText from "./AnimatedText";
 import { cn } from "@/lib/utils";
@@ -66,7 +65,7 @@ export default function Leadership() {
             />
           </div>
           <p className="max-w-sm text-ink/60 font-light leading-relaxed">
-            NOPO is co-led by Lena and Mateusz. Between them, twenty years of shipping
+            NOPO is co-led by Ajet and Noel. Between them, twenty years of shipping
             work that outlives the brief.
           </p>
         </div>
@@ -118,12 +117,11 @@ function DirectorCard({
         className="absolute inset-0"
       >
         {d.image ? (
-          <Image
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
             src={d.image}
             alt={d.name}
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
+            className="absolute inset-0 h-full w-full object-cover"
           />
         ) : (
           <div className={cn("absolute inset-0 bg-gradient-to-br", d.gradient)} />
