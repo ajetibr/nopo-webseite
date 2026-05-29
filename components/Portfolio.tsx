@@ -26,7 +26,7 @@ const projects: Project[] = [
     client: "Paramount+",
     category: "Social Content · Aftermovie",
     year: "2025",
-    size: "wide",
+    size: "square",
     gradient: "from-[#1a1a1a] via-[#2a3e48] to-[#5BC5E6]"
   },
   {
@@ -34,7 +34,7 @@ const projects: Project[] = [
     client: "Heiß & Hungrig",
     category: "Kanalkonzeption",
     year: "2026",
-    size: "tall",
+    size: "square",
     gradient: "from-[#5BC5E6] via-[#cfeff9] to-[#ffffff]"
   },
   {
@@ -42,7 +42,7 @@ const projects: Project[] = [
     client: "PDC",
     category: "Social Content · Post Production",
     year: "2025",
-    size: "tall",
+    size: "square",
     gradient: "from-[#f4f4f5] via-[#a0a0a0] to-[#1a1a1a]"
   },
   {
@@ -50,7 +50,7 @@ const projects: Project[] = [
     client: "Cinemare",
     category: "Webdesign",
     year: "2024",
-    size: "wide",
+    size: "square",
     gradient: "from-[#cfeff9] via-[#5BC5E6] to-[#1a1a1a]"
   },
   {
@@ -150,9 +150,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
   // Span / aspect tuned for full-card visibility — never overlap, never crop
   const sizeClasses = {
-    wide: "md:col-span-7 aspect-[16/10]",
-    tall: "md:col-span-5 aspect-[4/5]",
-    square: "md:col-span-6 aspect-[5/4]"
+    wide: "md:col-span-6 aspect-[4/3]",
+    tall: "md:col-span-6 aspect-[4/3]",
+    square: "md:col-span-6 aspect-[4/3]"
   }[project.size];
 
   return (

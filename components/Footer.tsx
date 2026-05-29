@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="text-xs uppercase tracking-wider2 text-paper/50 mb-8">
               Lass uns was bauen
             </div>
-            <h2 className="font-display font-black tracking-tightest leading-[0.86] text-[clamp(56px,9vw,160px)]">
+            <h2 className="font-display font-black tracking-tightest leading-[0.92] text-[clamp(40px,6vw,104px)]">
               <span className="block">Idee schon im Kopf?</span>
               <span className="block">
                 Lass mal <span className="italic font-medium text-accent">sehen</span>.

@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion";
 import {
-  Compass,
-  Sparkles,
-  Palette,
-  Wand2,
-  Code2,
-  Layers,
+  Share2,
+  Globe,
+  Search,
+  Megaphone,
+  Video,
+  Camera,
   ArrowUpRight
 } from "lucide-react";
 import AnimatedText from "./AnimatedText";
@@ -29,7 +29,7 @@ const services: Service[] = [
     blurb:
       "Wir übernehmen deine Kanäle komplett – von der Strategie über die Content-Produktion bis zum Community Management. Organisches Wachstum, das bleibt.",
     tags: ["Strategie", "Content", "Performance"],
-    icon: Sparkles,
+    icon: Share2,
     span: "md:col-span-7 md:row-span-2",
     tone: "light"
   },
@@ -38,7 +38,7 @@ const services: Service[] = [
     blurb:
       "Dein gesamter Webauftritt entsteht bei uns: vom UX/UI-Design über die Entwicklung bis zum Live-Gang.",
     tags: ["Development", "UX/UI-Design"],
-    icon: Code2,
+    icon: Globe,
     span: "md:col-span-5",
     tone: "accent"
   },
@@ -47,16 +47,16 @@ const services: Service[] = [
     blurb:
       "Deine Auffindbarkeit in der Region steuern wir ganzheitlich – von der SEO-Analyse über die Content-Optimierung bis zur lokalen Platzierung für planbaren Kundenzulauf.",
     tags: ["Keywords", "Ranking", "Reichweite"],
-    icon: Compass,
+    icon: Search,
     span: "md:col-span-3",
     tone: "dark"
   },
   {
     title: "Ads",
     blurb:
-      "Von der Kampagnenplanung über das kreative Ad-Design bis zur täglichen Optimierung steuern wir deine gesamte Onlinewerbung.",
+      "Wir planen, gestalten und optimieren deine gesamte Onlinewerbung – Tag für Tag.",
     tags: ["Google", "Meta"],
-    icon: Wand2,
+    icon: Megaphone,
     span: "md:col-span-2",
     tone: "light"
   },
@@ -65,7 +65,7 @@ const services: Service[] = [
     blurb:
       "Eventvideos, Imagefilme und Social-Media-Content entstehen bei uns – direkt einsatzbereit für all deine Kanäle.",
     tags: ["Konzept", "Dreh", "Schnitt"],
-    icon: Layers,
+    icon: Video,
     span: "md:col-span-7",
     tone: "light"
   },
@@ -74,7 +74,7 @@ const services: Service[] = [
     blurb:
       "Wir fotografieren deine Events, Produkte und dein Team für Content auf Premium-Niveau.",
     tags: ["Shooting", "Retusche"],
-    icon: Palette,
+    icon: Camera,
     span: "md:col-span-5",
     tone: "light"
   }
@@ -94,7 +94,7 @@ export default function Services() {
             <AnimatedText
               as="h2"
               text="Das ganze Spektrum. Aus einer Hand."
-              className="font-display font-bold tracking-tightest leading-[0.95] text-[clamp(36px,6vw,84px)] text-ink max-w-4xl"
+              className="font-display font-bold tracking-tightest leading-[1.0] text-[clamp(30px,3.6vw,52px)] text-ink max-w-[19ch]"
             />
           </div>
           <p className="md:max-w-sm text-ink/60 font-light text-pretty leading-relaxed">

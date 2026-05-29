@@ -65,7 +65,7 @@ export default function Hero() {
         {/* Headline + Frame split */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           <div className="lg:col-span-8">
-            <h1 className="font-display font-black tracking-tightest leading-[0.9] text-ink text-[clamp(40px,7vw,110px)] text-balance">
+            <h1 className="font-display font-black tracking-tightest leading-[0.95] text-ink text-[clamp(30px,4.4vw,64px)] text-balance max-w-[15ch]">
               <Line text="NOPO Media —" delay={0.1} />
               <Line text={["deine ", { highlight: "Creative Agency" }, " aus Kiel"]} delay={0.25} />
               <Line

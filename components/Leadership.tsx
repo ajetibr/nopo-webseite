@@ -72,14 +72,14 @@ export default function Leadership() {
         </div>
 
         {/* Asymmetric split */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           <DirectorCard
             d={directors[0]}
-            className="lg:col-span-7 lg:row-span-2 aspect-[4/5] lg:aspect-auto lg:min-h-[640px]"
+            className="aspect-[4/5] lg:aspect-auto lg:min-h-[620px]"
           />
           <DirectorCard
             d={directors[1]}
-            className="lg:col-span-5 lg:row-span-2 aspect-[4/5] lg:aspect-auto lg:min-h-[640px] lg:mt-24"
+            className="aspect-[4/5] lg:aspect-auto lg:min-h-[620px]"
           />
         </div>
       </div>
